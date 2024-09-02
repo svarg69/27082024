@@ -164,3 +164,66 @@
 // }
 
 // fact(6);
+
+// for (let i = 0; i < array.length; i++) {}
+
+// while (condition) {
+
+// }
+
+// Функции
+// функшн декларэй8шн
+// function verbNoun() {
+//   console.log(15);
+// }
+
+// // verbNoun();
+// console.log(verbNoun);
+// console.log(verbNoun());
+
+// let myFunc = verbNoun;
+
+// myFunc();
+
+// function verbNoun(func) {
+//   func();
+// }
+
+// function ptint() {
+//   console.log("Hello");
+// }
+// verbNoun(ptint);
+
+// let myFunc = new Function("let b = 13; console.log(b);");
+
+// console.log(myFunc);
+// myFunc();
+// console.log(eval("5 + 50"));
+
+// eval
+// function sum(a, b, c) {
+//   return a + b + c;
+// }
+
+// // console.log(sum(3, 11, 17));
+// // виды функций Экспрешн
+// let newSum = function sum(a, b, c) {
+//   return a + b + c;
+// };
+// // тут точка с запятой ставится ёпт
+// console.log(newSum(1, 1, 1));
+// console.log(sum(1, 1, 1));
+// // // при таком способе определения имя функции уже не работает, работает то что в let,
+// {
+//   let value = 110;
+// }
+
+// console.log(value);
+
+// стрелочная функция - нет фанкшн и имени
+// () => 5 + 5;
+// let summa = () => 5 + 5;
+
+// console.log(() => 5 + 5);
+// console.log(summa());
+// console.log(summa);
