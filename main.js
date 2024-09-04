@@ -227,3 +227,83 @@
 // console.log(() => 5 + 5);
 // console.log(summa());
 // console.log(summa);
+
+// Сравнить строи одинакового размера, и найти их отличия
+// Например  Hello World   Hellos world - вернет 1 - одно отличие в одной букве
+// function diffStrings(str1, str2) {
+//   if (str1 == str2) {
+//     return 0;
+//   }
+//   let count = 0;
+//   for (let i = 0; i < str1.length; i++) {
+//     if (str1[i] != str2[i]) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(diffStrings("I like JS", "I mike BS"));
+
+// function diffStrings(str1, str2) {
+//   if (str1 == str2) {
+//     return 0;
+//   }
+//   let count = 0;
+//   let str1parity =
+//     str1.length % 2 == 0 ? str1.length / 2 : Math.trunc(str1.length / 2 + 1);
+//   let str2parity =
+//     str2.length % 2 == 0 ? str2.length / 2 : Math.trunc(str2.length / 2 + 1);
+//   if (str1.substring(0, str1parity) != str2.substring(0, str2parity))
+//     for (let i = 0, size = str1.parity; i < size; i++) {
+//       if (str1[i] != str2[i]) {
+//         count++;
+//       }
+//     }
+//   if (str1.substring(str1.length / 2) != str2.substring(str2.length / 2))
+//     for (let i = str1.length / 2; i < str1.length / 2; i++) {
+//       if (str1[i] != str2[i]) {
+//         count++;
+//       }
+//     }
+
+//   return count;
+// }
+
+// console.log(diffStrings("I like JS", "I mikd BS"));
+
+// function diffStrings(str1, str2) {
+//   if (str1 == str2) {
+//     return 0;
+//   }
+//   let count = 0;
+//   for (let i = 0; i < str1.length; i++) {
+//     if (str1.charCodeAt(i) != str2.charCodeAt(i)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(diffStrings("I like JS", "I mikd BS"));
+
+// console.log("Hello World".charCodeAt(0));
+// Массивы
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+
+// arr = [];
+// console.log(arr);
+
+// arr = new Array(1, 2, 3);
+// console.log(arr);
+
+// arr = new Array(10);
+// console.log(arr);
+// если задать в скобках одно число - то массив будет пустой а число указывает на количество андефайндов
+
+let arr = [10, 15, 25, 45];
+console.log(arr);
+
+arr = arr.filter((value, i, arr) => arr[i] ** 2);
+console.log(arr);
