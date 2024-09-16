@@ -302,8 +302,78 @@
 // console.log(arr);
 // если задать в скобках одно число - то массив будет пустой а число указывает на количество андефайндов
 
-let arr = [10, 15, 25, 45];
-console.log(arr);
+// let arr = [10, 15, 25, 45];
+// console.log(arr);
 
-arr = arr.filter((value, i, arr) => arr[i] ** 2);
-console.log(arr);
+// arr = arr.filter((value, i, arr) => arr[i] ** 2);
+// console.log(arr);
+// let arr = [1, 2, 5, 10];
+// arr.fill(0);
+
+// let arr = [1, 2, 5, [4, 5, [4, 6], 10]];
+// arr = arr.flat(Infinity);
+
+// let arr = [3, 5, 6, 7];
+// console.log(arr.every((value) => value < 10));
+
+// let arr = [3, 5, 3, 1, 10, 2];
+// arr = arr.filter((v) => v % 2 == 0);
+
+// let arr = [3, 5, 6, 10, 12, 16];
+// arr.forEach((v) => v ** 2);
+// arr.forEach((v, i, a) => (a[i] = a[i] ** 2));
+
+// let arr = [1, 3, 4, 14, 16];
+// arr.map((v, i, a) => (a[i] = v ** 2));
+
+// let arr = [3, 5, 8, 10, 15, 14];
+// console.log(arr.reduce((result, v) => (result += v)));
+
+// let arr = [4, 5, 6, 7, 8];
+// arr = arr.concat(888, [[11111]]);
+
+// let arr = [4, 5, 0, 6, 7, 8, 0, 0];
+// console.log(arr.some((v) => v == 15));
+// console.log(arr);
+
+// ОБъекты
+
+// let book = {
+//   name: "Toxic People",
+//   author: "Alex Babanin",
+//   year: 2024,
+// };
+
+// console.log(Object.getOwnPropertyNames(book));
+// console.log(book);
+
+// ООП ddtltybt
+// function Person(name, age, phNum) {
+//   return {
+//     name: name,
+//     age: age,
+//     phNum: phNum,
+//     showInfo() {
+//       console.log(name, age, phNum);
+//     },
+//   };
+// }
+
+// let Person2 = Person("Oleg", 10, null);
+// console.log(Person2);
+// Person2.showInfo();
+
+// function Worker(name, age, money, phoneNumber) {
+//   this.name = name;
+//   this.phoneNumber = phoneNumber;
+//   this.money = money;
+//   this.age = age;
+//   this.showInfo = function () {
+//     console.log(this.name, this.age, this.money, this.phoneNumber);
+//   };
+// }
+
+// let worker1 = new Worker("iban");
+// console.log(worker1);
+
+// worker1.showInfo();
