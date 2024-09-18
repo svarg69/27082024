@@ -377,3 +377,157 @@
 // console.log(worker1);
 
 // worker1.showInfo();
+
+// let value = 10;
+// console.log(((v) => (v = 100))(value), value);
+
+// let person = {
+//   name: "Iban",
+//   age: 15,
+//   pockets: ["lopata", "bita"],
+// };
+// // глубокое копирование
+// let person2 = JSON.parse(JSON.stringify(person));
+// // let person2 = person;
+// // person2.age = 50;
+// // person.age = 10;
+// // console.log(person2);
+// // console.log(person);
+// // поверхностное копирование
+// // let person2 = { ...person };
+// person2.age = 50;
+// person.age = 10;
+// person.pockets[0] = "money";
+
+// // console.log(person2);
+// console.log(person);
+
+// // console.log(JSON.parse(JSON.stringify(person)));
+// console.log(person2);
+
+// внутри объекта делать не стрелочные функции
+// let book = {
+//   name: "Toxic suki",
+//   author: "Lexa",
+//   year: 2024,
+
+//   showInfo: function () {
+//     console.log(this.name, this.author, this.year);
+//   },
+// };
+
+// book.showInfo();
+
+// function getBook(name, author, year) {
+//   return {
+//     name: name,
+//     author: author,
+//     year: year,
+//     showInfo() {
+//       console.log(this.name, this.author, this.year);
+//     },
+//   };
+// }
+
+// let book2 = getBook("Toxic suki", "Dahsa", 2025);
+// book2.showInfo();
+
+// // Функция конструктор
+// function Book(name, author, year) {
+//   this.name = name;
+//   this.author = author;
+//   this.year = year;
+
+//   this.showInfo = () => console.log(this.name, this.author, this.year);
+// }
+
+// let book3 = new Book("Toxic suki", "DahsaLexa", 2026);
+// book3.showInfo();
+
+// console.log(book2);
+// console.log(book3);
+
+// let figure = {
+//   area: 0,
+//   perimeter: 0,
+//   getArea() {},
+//   getPerimeter() {},
+// };
+
+// let square = {
+//   side: 10,
+//   __proto__: figure,
+//   getSide() {
+//     return this.side;
+//   },
+//   getArea() {
+//     return this.side ** 2;
+//   },
+//   getPerimeter() {
+//     return this.side * 4;
+//   },
+// };
+
+// let circle = {
+//   radius: 4,
+//   __proto__: figure,
+//   getArea() {
+//     return 2 * Math.PI * this.radius ** 2;
+//   },
+// };
+
+// let triangle = {
+//   __proto__: figure,
+//   sideA: 10,
+//   sideB: 10,
+//   sideC: 10,
+//   height: 10,
+
+//   getArea() {
+//     return (this.sideC * this.height) / 2;
+//   },
+// };
+
+// let isoscelesTriangle = {
+//   __proto__: triangle,
+
+//   getArea() {
+//     return (this.sideC * this.height) / 2;
+//   },
+// };
+
+// // square.__proto__ = figure;
+// // square.area = 40;
+
+// // console.log(figure);
+// // console.log(square);
+// // console.log(square.area, square.perimeter);
+// // console.log(square.getArea());
+// // console.log(square.getPerimeter());
+// console.log(triangle.getArea());
+// console.log(circle.getArea());
+
+// let wallet = {
+//   money: 0,
+//   "a b": 120,
+// };
+
+// wallet.money = 100;
+// wallet["money"] = 200;
+// wallet["a b"] = 150;
+// console.log(wallet.money);
+// console.log(wallet);
+
+let wallet = {
+  money: 10,
+  get Money() {
+    return this.money * 2;
+  },
+
+  set Money(value) {
+    this.money += value;
+  },
+};
+
+wallet.Money = 100;
+console.log(wallet.Money);
